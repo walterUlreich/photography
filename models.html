@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jessica G Photography</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" id="logo"></a>
+      <div id="burger-nav">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="header-icons">
+        <a href="https://www.instagram.com/jessicagreverphotography/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/jessicagreverphotography/" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+
+      <nav id="nav">
+        <span id="close-btn">&times;</span>
+        <a href="index.html"><image id="sidebar-logo" src="images/photo-logo.png" width="200" height="200"></a>
+        <a href="index.html"><p class="tab">Home</p></a>
+        <a href="about.html"><p class="tab" id="second-tab">About/Contact</p></a>
+        <p>Galleries</p>
+        <h3>Newborns</h3>
+        <a href="newborns.html"><img src="images/newborns2.jpg" height="auto" width="300" class="nav-image"></a>
+        <h3>Families</h3>
+        <a href="families.html"><img src="images/family3.jpg" height="auto" width="300" class="nav-image"></a>
+        <h3>Senior Photos</h3>
+        <a href="seniors.html"><img src="images/seniors2.jpg" height="auto" width="300" class="nav-image"></a>
+        <h3>Models</h3>
+        <a href="models.html"><img src="images/model2.jpg" height="auto" width="300" class="nav-image"></a>
+      </nav>
+    </header>
+
+    <section class="gallery text-center">
+      <div class="container">
+        <h1 class="title">Models</h1><hr class="hr">
+        <p class="expand">(click image to expand)</p>
+        <div class="row first">
+          <div class="col-md-4">
+            <img src="images/model3.jpg" width="auto" height="300" class="gallery-image portrait" onclick="openModal(this)">
+          </div>
+          <div class="col-md-4">
+            <img src="images/model7.jpg" width="auto" height="300" class="gallery-image portrait" onclick="openModal(this)">
+          </div>
+          <div class="col-md-4">
+            <img src="images/model4.jpg" width="auto" height="300" class="gallery-image portrait" onclick="openModal(this)">
+          </div>
+        </div>
+        <div class="row second">
+          <div class="col-md-4">
+            <img src="images/model6.jpg" width="auto" height="300" class="gallery-image portrait" onclick="openModal(this)">
+          </div>
+          <div class="col-md-4">
+            <img src="images/model2.jpg" width="300" height="auto" class="gallery-image landscape" onclick="openModal(this)">
+          </div>
+          <div class="col-md-4">
+            <img src="images/model5.jpg" width="auto" height="300" class="gallery-image portrait" onclick="openModal(this)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <span id="close-modal" onclick="closeModal()">&times;</span>
+      <img id="modal-image" src="">
+    </div>
+
+    <footer>
+      <h2>Jessica Grever</h2>
+      <p>&copy;2018</p>
+      <div id="footer-icons">
+        <a href="https://www.instagram.com/jessicagreverphotography/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/jessicagreverphotography/" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </footer>
+
+    <div id="overlay"></div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
