@@ -1,297 +1,196 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Poiret One', cursive;
-}
-
-/**** Home Page ****/
-
-#logo {
-  width: 220px;
-  height: 220px;
-  margin: 20px auto;
-  background: url('images/photo-logo.png');
-  background-position: center center;
-  background-size: cover;
-  display: block;
-}
-
-#home-photo {
-  margin: 40px 0 80px 0;
-}
-
-#nav-2 {
-  text-align: center;
-  font-size: 140%;
-  font-family: 'Poiret One', cursive;
-  padding: 10px;
-  position: relative;
-  top: 20px;
-}
-
-#nav-2 li {
-  display: inline-block;
-  margin-right: 60px;
-  letter-spacing: .125em;
-}
-
-.square {
-  background-color: #333;
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  margin-right: 60px;
-}
-
-#main-photo {
-  width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-  top: 60px;
-}
-
-/**** Nav ****/
-
-nav {
-  height: 100%;
-  width: 400px;
-  position: fixed;
-  left: -400px;
-  top: 0;
-  background-color: white;
-  z-index: 500;
-  padding: 20px;
-  text-transform: uppercase;
-  overflow-y: scroll;
-  transition: all 0.5s ease;
-  letter-spacing: .125em;
-}
-
-.nav-image {
-  margin-bottom: 20px;
-}
-
-#close-btn {
-  font-size: 700%;
-  position: relative;
-  bottom: 50px;
-  cursor: pointer;
-}
-
-nav p:last-of-type {
-  margin-top: 40px;
-  border-bottom: 2px solid black;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-.tab {
-  background-color: black;
-  color: white;
-  padding: 8px;
-  margin: -30px 0;
-  cursor: pointer;
-}
-
-#second-tab {
-  margin-bottom: 20px;
 }
 
 #burger-nav {
-  cursor: pointer;
-  width: 50px;
+  font-size: 220%;
   position: absolute;
-  left: 20px;
-  top: 26px;
+  left: 40px;
+  top: 20px;
+  cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px auto;
+#logo {
+  display: block;
+  margin: 20px auto;
 }
-
-#sidebar-logo {
-  display: inline-block;
-  margin: 0 auto;
-  position: relative;
-  left: 20px;
-}
-
-/**** Header ****/
 
 #header-icons {
-  font-size: 200%;
+  font-size: 220%;
   position: absolute;
-  right: 60px;
-  top: 30px;
+  right: 40px;
+  top: 20px;
+}
+
+#header-icons i {
+  margin-left: 20px;
 }
 
 #header-icons a {
-  margin: 0 8px;
-  color: #333;
+  color: black;
 }
 
-header {
-
+.list {
+  margin: 40px auto;
 }
 
-/**** Galleries ****/
-
-.first {
-
+.list ul {
+  list-style-type: none;
+  font-size: 140%;
 }
 
-.second {
-  margin-top: 20px;
+.list ul li {
+  display: inline-block;
+  margin-right: 40px;
+  letter-spacing: .125em;
 }
 
-.gallery-image {
+#nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #ddd;
+  padding-top: 200px;
+}
+
+.link {
+  margin: 20px auto;
+  color: #ddd;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.close {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  font-size: 400%;
+}
+
+.close i {
+  color: white;
   cursor: pointer;
 }
 
 .gallery {
-  height: 860px;
+  padding-bottom: 100px;
 }
 
-/**** Footer ****/
-
-footer {
-  height: 200px;
-  background-color: #ddd;
-  font-family: 'Poiret One', cursive;
-  text-align: center;
-}
-
-footer h2 {
-  display: block;
-  position: relative;
-  top: 40px;
-  letter-spacing: .125em;
-  text-transform: uppercase;
-}
-
-footer p {
-  position: relative;
-  top: 40px;
-  letter-spacing: .2em;
-}
-
-#footer-icons {
-  font-size: 200%;
-  position: relative;
-  top: 40px;
-}
-
-#footer-icons a {
-  margin: 0 8px;
-  color: #333;
-}
-
-/**** Modal ****/
-
-#modal {
-  display: none;
-  position: fixed;
-  z-index: 3000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0,0,0, 0.9);
-}
-
-#modal-image {
-  margin: auto;
-  display: block;
-  width: 60%;
-  height: auto;
-}
-
-#close-modal {
-  font-size: 800%;
-  color: white;
-  position: absolute;
-  top: 0px;
-  right: 100px;
+.gallery img {
   cursor: pointer;
 }
 
-/**** About/Contact ****/
+.title {
+  margin-bottom: -8px;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+
+.hr {
+  margin-bottom: 80px;
+  width: 20%;
+}
+
+.expand {
+  font-size: 140%;
+}
+
+.col-md-4 {
+  margin-bottom: 20px;
+}
+
+.modal {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-image {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.close-modal {
+  font-size: 400%;
+  color: #ddd;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  cursor: pointer;
+}
 
 .about {
   margin-bottom: 100px;
 }
 
-.about-text {
-  font-size: 130%;
-  text-align: left;
-  letter-spacing: .025em;
+.about p {
+  font-size: 160%;
 }
 
-.about-text p {
-  width: 90%;
-}
 .contact {
-  height: 300px;
+  margin-bottom: 100px;
 }
 
 .contact i {
-  font-size: 380%;
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 300%;
 }
 
 .contact p {
   font-size: 180%;
+  margin-top: 20px;
   letter-spacing: .125em;
 }
 
-#headshot {
-  border: 2px solid black;
-  padding: 4px;
+footer {
+  text-align: center;
+  background-color: #ddd;
+  height: 240px;
+  padding: 40px;
+  margin-top: 40px;
 }
 
-/**** Misc ****/
+footer h2 {
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
 
-#overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0,0,0,0.5);
-  display: none;
+footer p {
+  font-size: 100%;
+  letter-spacing: .125em;
+}
+
+#footer-icons {
+  font-size: 220%;
+}
+
+#footer-icons i {
+  margin: 0 10px;
+}
+
+#footer-icons a {
+  color: black;
 }
 
 .noscroll {
   overflow: hidden;
 }
 
-hr {
-  width: 200px;
-  position: relative;
-  bottom: 10px;
-  margin-bottom: 80px;
-}
-
-.title {
-  text-transform: uppercase;
-  letter-spacing: .125em;
-}
-
-.expand {
-  font-size: 120%;
-  position: relative;
-  bottom: 20px;
-  letter-spacing: .125em;
+.fa-square-full {
+  font-size: 60%;
 }
